@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" sizes="180x180" href="/img/icons8.png">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Weather</title>
+</head>
+
+<body>
+    <div class="main-content">
+        {{> header }}
+        <h1>welcome {{ name }}</h1>
+
+        <form action="" id="forcastform">
+            <input type="text" name="location" id="location" placeholder="location">
+            <button type="submit" class="searchbtn">search</button>
+        </form>
+
+        <div class="forcast">
+            <label for="" id="lblLocation" class="forcastdata"></label>
+            <label for="" id="lbltemperature" class="forcastdata"></label>
+            <label for="" id="lblcondition" class="forcastdata"></label>
+            <label for="" id="lblhumidity" class="forcastdata"></label>
+            <label for="" id="lblwind" class="forcastdata"></label>
+            <label for="" id="lblError"></label>
+        </div>
+
+    </div>
+    {{>footer}}
+    <script src="/js/script.js"></script>
+</body>
+
+
+</html>
