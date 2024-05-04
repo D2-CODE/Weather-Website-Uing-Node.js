@@ -3,8 +3,8 @@ const path = require('path');
 const hbs = require('hbs');
 const forcast = require('./utils/forcast')
 const geocode = require('./utils/geocode');
-const { error } = require('console');
-
+// const { error } = require('console');
+const port = process.env.PORT || 3000;
 const app = express()
 
 //define paths for express config
@@ -106,7 +106,7 @@ app.get('*', (req, res) => {
     })
 })
 
-app.listen(3000, (err) => {
+app.listen(port, (err) => {
     if (err) {
         console.log('error: ', err);
     } else {
